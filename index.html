@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UP Market - Divulgue Seu Negócio e Alcance Mais Clientes</title>
+    <meta name="description" content="Plataforma definitiva para novos comerciantes divulgarem seus negócios. Teste grátis por 10 dias e aumente suas vendas em até 300%.">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <button id="backBtn" class="back-btn" style="display: none;">
+                        ← Voltar
+                    </button>
+                    <h1 class="logo">UP Market</h1>
+                </div>
+                <nav class="nav-menu">
+                    <button onclick="scrollToSection('features')" class="nav-link">Recursos</button>
+                    <button onclick="scrollToSection('how-it-works')" class="nav-link">Como Funciona</button>
+                    <button onclick="scrollToSection('testimonials')" class="nav-link">Depoimentos</button>
+                    <button onclick="scrollToSection('faq')" class="nav-link">FAQ</button>
+                </nav>
+                <button onclick="openWhatsApp()" class="contact-btn">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    Contato
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Template -->
+        <div id="home-template" class="template active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="badge">
+                            🎉 Teste Grátis de 10 Dias
+                        </div>
+                        <h1 class="hero-title">UP Market</h1>
+                        <p class="hero-subtitle">
+                            A plataforma definitiva para novos comerciantes divulgarem seus negócios e alcançarem milhares de clientes
+                        </p>
+                        <div class="hero-buttons">
+                            <button onclick="scrollToSection('how-it-works')" class="btn btn-primary">
+                                Saiba Mais
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M5 12h14m-7-7l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <button onclick="openWhatsApp()" class="btn btn-secondary">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                </svg>
+                                Quero Divulgar Minha Loja
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="features">
+                <div class="container">
+                    <h2 class="section-title">Por que escolher a UP Market?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3>Alcance Massivo</h3>
+                            <p>Conectamos seu negócio a milhares de clientes potenciais em nossa rede</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M3 3v18h18" />
+                                    <path d="m19 9-5 5-4-4-3 3" />
+                                </svg>
+                            </div>
+                            <h3>Resultados Comprovados</h3>
+                            <p>Média de 300% de aumento em vendas para nossos clientes nos primeiros 30 dias</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                </svg>
+                            </div>
+                            <h3>Setup Rápido</h3>
+                            <p>Sua campanha no ar em menos de 24 horas. Sem complicação!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works -->
+            <section id="how-it-works" class="how-it-works">
+                <div class="container">
+                    <h2 class="section-title">Como Funciona</h2>
+                    <div class="steps-grid">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Cadastro Rápido</h3>
+                            <p>Cadastre seu negócio em menos de 5 minutos</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Análise Personalizada</h3>
+                            <p>Nossa equipe analisa seu nicho e cria estratégia</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Campanha Ativa</h3>
+                            <p>Sua divulgação começa a rodar em nossos canais</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Resultados</h3>
+                            <p>Acompanhe em tempo real o crescimento das vendas</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Templates Section -->
+            <section class="templates">
+                <div class="container">
+                    <h2 class="section-title">Templates Personalizados para Seu Negócio</h2>
+                    <div class="templates-grid">
+                        <div class="template-card" onclick="showTemplate('food')">
+                            <div class="template-icon food-icon">
+                                🍳
+                            </div>
+                            <h3>Alimentação</h3>
+                            <p>Restaurantes, lanchonetes, docerias e muito mais</p>
+                            <button class="btn btn-template">Ver Exemplo</button>
+                        </div>
+                        <div class="template-card" onclick="showTemplate('fashion')">
+                            <div class="template-icon fashion-icon">
+                                👔
+                            </div>
+                            <h3>Moda</h3>
+                            <p>Lojas de roupas, acessórios e calçados</p>
+                            <button class="btn btn-template">Ver Exemplo</button>
+                        </div>
+                        <div class="template-card" onclick="showTemplate('services')">
+                            <div class="template-icon services-icon">
+                                🔧
+                            </div>
+                            <h3>Serviços</h3>
+                            <p>Profissionais liberais e prestadores de serviços</p>
+                            <button class="btn btn-template">Ver Exemplo</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section id="testimonials" class="testimonials">
+                <div class="container">
+                    <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <h3>Ana Silva - Doceria Ana</h3>
+                            <p>"Aumentei minhas vendas em 300% nos primeiros 30 dias. A UP Market transformou meu negócio!"</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <h3>Carlos Santos - Moda Express</h3>
+                            <p>"Excelente plataforma! Consegui alcançar clientes que nunca imaginaria. Super recomendo."</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <h3>Mariana Costa - Salão Beleza Pura</h3>
+                            <p>"O suporte é incrível e os resultados superaram minhas expectativas. Vale cada centavo investido."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="faq">
+                <div class="container">
+                    <h2 class="section-title">Dúvidas Frequentes</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(0)">
+                                Como funciona o período de teste gratuito?
+                                <svg class="faq-arrow" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Oferecemos 10 dias gratuitos para você testar todos os recursos da plataforma. Sem compromisso e sem necessidade de cartão de crédito.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(1)">
+                                Quais tipos de negócios podem usar a UP Market?
+                                <svg class="faq-arrow" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Trabalhamos com todos os tipos de comerciantes: alimentação, moda, serviços, e-commerce, serviços locais e muito mais.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(2)">
+                                Como é feita a divulgação dos meus produtos?
+                                <svg class="faq-arrow" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Criamos landing pages personalizadas, campanhas de marketing digital e divulgamos em nossos canais parceiros.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(3)">
+                                Preciso ter experiência com marketing digital?
+                                <svg class="faq-arrow" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Não! Nossa equipe cuida de todo o processo. Você só precisa fornecer informações sobre seu negócio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta">
+                <div class="container">
+                    <h2>Pronto para Alavancar Suas Vendas?</h2>
+                    <p>Junte-se a centenas de comerciantes que já estão vendendo mais com a UP Market</p>
+                    <div class="cta-buttons">
+                        <button onclick="openWhatsApp()" class="btn btn-primary">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            Começar Agora - Teste Grátis
+                        </button>
+                        <button onclick="scrollToSection('features')" class="btn btn-outline">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                            Ver Mais Recursos
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Food Template -->
+        <div id="food-template" class="template">
+            <section class="template-hero food-hero">
+                <div class="container">
+                    <div class="template-hero-content">
+                        <div class="template-hero-icon">🍳</div>
+                        <h1>Sabores que Conquistam</h1>
+                        <p>Divulgamos seu restaurante, lanchonete ou doceria para milhares de clientes famintos por novidades deliciosas</p>
+                        <div class="template-hero-buttons">
+                            <button onclick="openWhatsApp()" class="btn btn-primary">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                </svg>
+                                Quero divulgar meu restaurante
+                            </button>
+                            <button onclick="showTemplate('home')" class="btn btn-outline">Ver outros templates</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="template-features">
+                <div class="container">
+                    <h2>Nossos Pratos do Dia</h2>
+                    <div class="template-features-grid">
+                        <div class="template-feature-card">
+                            <div class="template-feature-icon">🍕</div>
+                            <h3>Pizzarias</h3>
+                            <p>Aumente suas entregas e conquiste clientes fiéis</p>
+                            <ul>
+                                <li>✓ Fotos profissionais</li>
+                                <li>✓ Cardápio digital</li>
+                                <li>✓ Sistema de pedidos</li>
+                            </ul>
+                        </div>
+                        <div class="template-feature-card">
+                            <div class="template-feature-icon">🍰</div>
+                            <h3>Docerias</h3>
+                            <p>Mostre suas criações doces para o mundo</p>
+                            <ul>
+                                <li>✓ Galeria de produtos</li>
+                                <li>✓ Encomendas online</li>
+                                <li>✓ Entrega programada</li>
+                            </ul>
+                        </div>
+                        <div class="template-feature-card">
+                            <div class="template-feature-icon">🍔</div>
+                            <h3>Lanchonetes</h3>
+                            <p>Clientes famintos estão esperando seu lanche</p>
+                            <ul>
+                                <li>✓ Promoções diárias</li>
+                                <li>✓ Combo personalizados</li>
+                                <li>✓ Delivery rápido</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="template-cta">
+                <div class="container">
+                    <h2>Comece a vender mais hoje!</h2>
+                    <p>Junte-se a centenas de restaurantes que já cresceram com a UP Market</p>
+                    <button onclick="openWhatsApp()" class="btn btn-primary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        Falar com especialista agora
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Fashion Template -->
+        <div id="fashion-template" class="template">
+            <section class="template-hero fashion-hero">
+                <div class="container">
+                    <div class="template-hero-content">
+                        <div class="template-hero-icon">👔</div>
+                        <h1>Estilo que Vende</h1>
+                        <p>Sua loja de moda merece ser vista. Criamos campanhas incríveis que transformam visualizações em vendas</p>
+                        <div class="template-hero-buttons">
+                            <button onclick="openWhatsApp()" class="btn btn-primary">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                </svg>
+                                Quero divulgar minha loja
+                            </button>
+                            <button onclick="showTemplate('home')" class="btn btn-outline">Ver outros templates</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="template-features">
+                <div class="container">
+                    <h2>Nossas Coleções</h2>
+                    <div class="template-features-grid">
+                        <div class="template-feature-card">
+                            <div class="template-feature-icon">👗</div>
+                            <h3>Vestuário Feminino</h3>
+                            <p>Conquiste o público feminino com campanhas direcionadas</p>
+                            <ul>
+                                <li>✓ Lookbook digital</li>
+                                <li>✓ Tabela de medidas</li>
+                                <li>✓ Consultoria de estilo</li>
+                            </ul>
+                        </div>
+                        <div class="template-feature-card">
+                            <div class="template-feature-icon">👔</div>
+                            <h3>Masculina Premium</h3>
+                            <p>Para o homem moderno que busca qualidade e estilo</p>
+                            <ul>
+                                <li>✓ Catálogo interativo</li>
+                                <li>✓ Personalização</li>
+                                <li>✓ Assinatura mensal</li>
+                            </ul>
+                        </div>
+                        <div class="template-feature-card">
+                            <div class="template-feature-icon">👟</div>
+                            <h3>Acessórios & Calçados</h3>
+                            <p>Os detalhes que fazem toda a diferença</p>
+                            <ul>
+                                <li>✓ Galeria 360°</li>
+                                <li>✓ Guia de tamanhos</li>
+                                <li>✓ Troca fácil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="template-cta">
+                <div class="container">
+                    <h2>Sua marca merece destaque!</h2>
+                    <p>Acelere suas vendas com marketing de moda profissional</p>
+                    <button onclick="openWhatsApp()" class="btn btn-primary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        Agendar consultoria gratuita
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Services Template -->
+        <div id="services-template" class="template">
+            <section class="template-hero services-hero">
+                <div class="container">
+                    <div class="template-hero-content">
+                        <div class="template-hero-icon">🔧</div>
+                        <h1>Serviços que Conectam</h1>
+                        <p>Profissionais qualificados merecem ser encontrados. Conectamos você a clientes que precisam exatamente do que você oferece</p>
+                        <div class="template-hero-buttons">
+                            <button onclick="openWhatsApp()" class="btn btn-primary">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                </svg>
+                                Quero divulgar meus serviços
+                            </button>
+                            <button onclick="showTemplate('home')" class="btn btn-outline">Ver outros templates</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="template-features">
+                <div class="container">
+                    <h2>Áreas de Atuação</h2>
+                    <div class="template-features-grid">
+                        <div class="template-feature-card">
+                            <div class="template-feature-icon">🏠</div>
+                            <h3>Serviços Domésticos</h3>
+                            <p>Diaristas, eletricistas, encanadores e muito mais</p>
+                            <ul>
+                                <li>✓ Agendamento online</li>
+                                <li>✓ Avaliações de clientes</li>
+                                <li>✓ Seguro garantia</li>
+                            </ul>
+                        </div>
+                        <div class="template-feature-card">
+                            <div class="template-feature-icon">💻</div>
+                            <h3>Tecnologia & TI</h3>
+                            <p>Desenvolvedores, designers, suporte técnico</p>
+                            <ul>
+                                <li>✓ Portfólio completo</li>
+                                <li>✓ Projetos remotos</li>
+                                <li>✓ Suporte 24/7</li>
+                            </ul>
+                        </div>
+                        <div class="template-feature-card">
+                            <div class="template-feature-icon">🎓</div>
+                            <h3>Educação & Consultoria</h3>
+                            <p>Aulas particulares, consultorias, treinamentos</p>
+                            <ul>
+                                <li>✓ Agenda de aulas</li>
+                                <li>✓ Material didático</li>
+                                <li>✓ Certificado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="template-cta">
+                <div class="container">
+                    <h2>Mais clientes, menos burocracia!</h2>
+                    <p>Deixe a gente cuidar da divulgação enquanto você foca no seu trabalho</p>
+                    <button onclick="openWhatsApp()" class="btn btn-primary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        Falar com consultor agora
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">UP Market</h3>
+                    <p>A plataforma que transforma pequenos negócios em grandes sucessos</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Soluções</h4>
+                    <ul>
+                        <li><button onclick="showTemplate('food')">Alimentação</button></li>
+                        <li><button onclick="showTemplate('fashion')">Moda</button></li>
+                        <li><button onclick="showTemplate('services')">Serviços</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><button onclick="scrollToSection('features')">Recursos</button></li>
+                        <li><button onclick="scrollToSection('testimonials')">Depoimentos</button></li>
+                        <li><button onclick="scrollToSection('faq')">FAQ</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>(63) 91012-971</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                            </svg>
+                            <button onclick="openWhatsApp()">WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 UP Market. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
